@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    font-family:'Times New Roman', Times, serif;
+}
+body
+{
+    background-image: url(/_fest/images/cat.jpg);
+    background-size: cover;
+    /* background-position: center; */
+    font-family: sans-serif;
+}
+.checkbox{
+    margin-top: 1130px;
+}
+
+nav {
+    position: absolute;
+    top:20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background:rgb(43, 39, 39);
+    width: 200px;
+    backdrop-filter: blur(20px);
+    border-radius: 5px;
+    line-height: 30px;
+    padding: 8px 25px;
+}
+
+nav label{
+    color: white;
+    font-size: 18px;
+    display: block;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.button span{
+    float: right;
+    line-height: 27px;
+
+}
+
+nav ul{
+    position: absolute;
+    list-style: none;
+    background: rgb(43, 39, 39);
+    top: 60px;
+    left: 0;
+    width: 100%;
+    border-radius: 5px;
+    display: none;
+}
+
+[id^=btn]:checked+ul{
+    display: block;
+}
+
+nav .menu:before{
+    position: absolute;
+    content: '';
+    height: 20px;
+    width: 20px;
+    background:rgb(43, 39, 39);
+    right: 20px;
+    top: -10px;
+    transform: rotate(45deg);
+    z-index: -1;
+}
+
+
+nav ul li{
+    line-height: 30px;
+    padding: 8px 20px;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+
+}
+
+nav ul li label{
+    font-size: 18px;
+
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+}
+
+nav ul li a:hover,
+nav ul li label:hover{
+    color: darkgoldenrod;
+}
+
+nav ul ul{
+    position: static;
+}
+
+nav ul ul li{
+    line-height: 30px;
+    padding-left: 30px;
+    border-bottom: none;
+}
+
+nav ul ul li a{
+    color: rgb(247, 242, 242);
+    font-size: 16px;
+}
+
+nav ul li span{
+    font-size: 20px;
+    float: right;
+    margin-top: 10px;
+    padding: 0 10px;
+
+}
+
+input{
+    display: none;
+}

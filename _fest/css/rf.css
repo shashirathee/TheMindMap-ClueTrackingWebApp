@@ -1,0 +1,134 @@
+body {
+    animation: grow 1s;
+  }
+  @keyframes grow {
+    0% { transform: scale(.7); }
+  100% { transform: scale(1); }
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "popins", sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 10vh;
+    background: url('/_fest/images/login.jpg') no-repeat;
+    margin-top: 220px;
+    margin-right: 95px;
+    background-size: cover;
+    background-position: top;
+}
+
+.wrapper{
+    width: 750px;
+    background-color:rgb(255, 255, 255, .1);
+    border: 2px solid rgba(255, 255, 255, .2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    backdrop-filter: blur(50px);
+    border-radius: 10px;
+    color: #daa520;
+    padding: 40px 35px 55px;
+    margin: 0 10px;
+}
+
+.wrapper h1{
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #daa520;
+}
+
+.wrapper .input-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-self: start;
+}
+
+.input-box .input-field {
+    position: relative;
+    width: 48%;
+    height: 50%;
+    margin: 13px 0;
+}
+
+.input-box .input-field input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 2px solid rgba(31, 77, 107, 0.886);
+    outline: none;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 6px;
+    padding: 15px 15px 15px 40px; 
+    align-self: baseline;
+}
+
+.input-box .input-field input::placeholder {
+    color:#000000;
+}
+
+.input-box .input-field i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 15px;
+}
+
+.wrapper label {
+    display: inline-block;
+    font-size: 14.5px;
+   
+}
+
+.wrapper label input {
+    accent-color: #fff;
+    margin-right: 25px 0 15px;
+    
+}
+
+.wrapper .btn {
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+    margin: 25px 0 15px;
+}
+.login{
+    /* display: flex; */
+    /* align-items: center; */
+    text-align: center;
+}
+
+.wrapper .icon-close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    font-size: 2em;
+    display: flex;
+    color: solid black;
+    cursor: pointer;
+    align-items: center;
+}

@@ -1,0 +1,46 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+
+.parallax{
+    /* position: relative; */
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    height: 100vh;
+    background: url('/_fest/images/about.jpg') no-repeat;
+    background-size:cover;
+    background-position: center;
+    background-attachment:fixed;
+    scroll-behavior: smooth;
+}
+
+#text{
+    /* position: inherit; */
+    position: fixed;
+    text-align: start;
+    font-size: 5em;
+    color: #523939;
+    /* text-shadow: 2px 4px 5px #f9f9f9; */
+    font-family: 'Courier New', monospace;
+}
+
+.sec{
+    position: relative;
+    background-color: #020912;
+    padding: 30px 100px;
+}
+
+.sec h2{
+    font-size: 3em;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.sec p{
+    font-size: 1em;
+    color: #fff;
+    font-weight: 300;
+    text-align: justify;
+}

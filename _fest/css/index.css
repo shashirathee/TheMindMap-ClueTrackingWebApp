@@ -1,0 +1,282 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 10vh;
+    background: url('/_fest/images/6204107.jpg') no-repeat;
+    background-position: top;
+    background-size:cover;
+    
+    overflow-y: auto;
+}
+
+header{
+    position: fixed;
+    top: auto;
+    left: auto;
+    right:auto;
+    padding: 20px 100px;
+    width: 100%;
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99%;
+    margin-top: -310px;
+}
+
+.navigation a{
+    font-size: 20px;
+    position: relative;
+    font-family: 'Times New Roman', Times, serif;
+    color:rgb(10, 10, 10);
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 30px;   
+    /* animation: fadeInText .5s ease forwards .5s; */
+    animation: fadeIn 2s ease forwards;
+}
+
+.navigation a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: darkgoldenrod;
+    border-radius: 5px;
+    bottom: -5px;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: .5s;
+}
+
+.navigation a:hover::after{
+    transform: scaleX(1);
+}
+
+.navigation .login{
+    font-family:'Times New Roman', Times, serif;
+    width: 70px;
+    height: 30px;
+    font-size: 20px;
+    background: transparent;
+    color: black;
+    outline: none;
+    border-radius: 5px ;
+    margin-left: 30px;
+    transition: .5s;
+}
+
+.navigation .login:hover{
+    /* background: black; */
+    color:darkgoldenrod;
+    cursor: pointer;
+}
+
+.Welcome_Sherlock{
+    font-size: 25px;
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:#000000;
+    margin-top: -6px;
+    user-select: none;
+    animation: fadeIn 2s ease forwards;
+}
+
+.wrapper{
+    justify-content: center;
+    position:relative;
+    box-shadow: black;
+    width: 400px;
+    height: 440px;
+    background: transparent;
+    border: 2px rgb(14, 13, 13);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    display: flex;
+    align-items: flex-end;
+ transform: scale(0);
+
+ overflow-y: auto;
+}
+
+.wrapper .form-box{
+    width: 100%;
+    padding: 40px;
+}
+
+.wrapper .icon-close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    font-size: 2em;
+    display: flex;
+    color: solid black;
+    cursor: pointer;
+    align-items: center;
+}
+
+.form-box h2{
+    font-size: 2em;
+    color: darkgoldenrod;
+    text-align: center;
+}
+
+.input{
+    position: relative;
+    width: 100%;
+    height: 40px;
+    border-bottom: 2px solid black ;
+    margin: 30px 0;
+}
+
+.input label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: black;
+    font-weight: 400;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.input input:focus~label,
+.input input:valid~label{
+    top: -5px;
+
+}
+
+.input input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border:none;
+    outline: none;
+    font-size: .5cm;
+    color: rgb(252, 197, 16);
+    font-weight: 300;
+    padding: 0 35px 0 4px;
+}
+
+.input .icon{
+    position: absolute;
+    right: 4px;
+    font-size: .5cm;
+    color: goldenrod;
+    line-height: 50px;
+}
+
+.remember-forgot{
+    font-size: .9em;
+    color: black;
+    font-weight: 400;
+    margin: -10px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.remember-forgot label input{
+    accent-color:#162938;
+    margin-right: 3px;
+}
+
+.remember-forgot a{
+    color:rgb(49, 10, 156);
+    text-decoration: none;
+}
+
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+
+.button{
+    width: 100%;
+    height: 40px;
+    background: transparent;
+    border-radius: 15px;
+    outline:invert;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: 550;
+}
+
+.loginregiser{
+    text-align: center;
+    font-size: .9em;
+    font-weight: 500;
+    margin: 25px 0 10px;
+}
+
+.loginregiser p a{
+    color: #162938;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.loginregiser p a:hover{
+    text-decoration: underline;
+}
+
+@keyframes animate {
+    0% {
+      transform: scale(0, 0.005);
+    }
+    50% {
+      transform: scaleY(0.005);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(50%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(-50%);
+    }
+  }
+  
+  @keyframes fadeInText {
+    from {
+      opacity: 0;
+      transform: translateY(50%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+
+  main {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: mistyrose;
+  transform: scale(0, 0);
+  
+  overflow: hidden;
+}
+
+
