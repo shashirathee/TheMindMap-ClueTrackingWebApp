@@ -1,0 +1,103 @@
+.casesListImage{
+    image-resolution: 100%;
+    image-orientation: inherit;
+    shape-image-threshold: inherit;
+}
+
+.box{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 6px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    width: auto;
+    border-radius: 27px;
+    border-color: transparent;
+    
+    min-height: 350px;
+    text-align:left;
+    text-emphasis-position: 10px;
+    padding-left: 15px;
+    padding-right: 10px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+
+
+}
+img
+{
+    width: 10%;
+    height: 90%;
+}
+
+.sectionn{
+    background-image: url(/_fest/images/case.jpg);
+    /* background-color: #2a1f62; */
+    background-attachment:local;
+     /* width: 94%;  */
+     /* height: 90%; */
+    object-fit: cover;}  
+
+
+/* img{
+    width: 1000px;
+    height: 58px;
+} */
+.selectioni{
+    background-image: url(/_fest/images/case-list.jpg);
+    /* background-color: #2a1f62; */
+    background-attachment:inherit;
+    
+}
+
+.button {
+    position:inherit;
+  align-items: center;
+  background: #ffffff;
+  border: 0;
+  border-radius: 8px;
+  box-shadow: -10px -10px 30px 0 #fff,10px 10px 30px 0 #1d0dca17;
+  box-sizing: border-box;
+  color: #2a1f62;
+  cursor: pointer;
+  display: flex;
+  font-family:'Courier New', Courier, monospace;
+  font-size: 1.2rem;
+  justify-content: center;
+  line-height: 1.5rem;
+  padding: 15px;
+  position:absolute;
+  text-align: left;
+  transition: .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: pre;
+  width: max-content;
+  
+  
+}
+
+.button-67:hover {
+  background: #f8f8ff;
+  box-shadow: -15px -15px 30px 0 #fff, 15px 15px 30px 0 #1d0dca17;
+}
+
+@media (min-width: 768px) {
+  .button-67 {
+    padding: 24px;
+  }
+}
+        
+
+/* img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    image-resolution: 10%;
+    background-image: url(images/cases-list.jpg);
+    background-attachment:local;
+    background-image: url(images/cases-list.jpg);
+  background-attachment:local;
+} */
+
+strong{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 200;
+}
